@@ -28,7 +28,7 @@ def check_browser(browser):
   driver.get("http://www.google.com")
   assert "google" in driver.page_source
   driver.quit()
-  print("Browser %s checks out!" % browser)
+  print(f"Browser {browser} checks out!")
 
 
 check_browser("FIREFOX")
